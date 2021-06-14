@@ -3,3 +3,15 @@
 
 #include "Core/GameCore/TowerDefencePlayerController.h"
 
+ATowerDefencePlayerController::ATowerDefencePlayerController()
+{
+
+}
+
+void ATowerDefencePlayerController::Tick(float DeltaSeconds)
+{
+}
+
+void ATowerDefencePlayerController::BeginPlay()
+{
+}
