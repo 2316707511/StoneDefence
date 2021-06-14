@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UI/Core/UI_RoleOfTherWidget.h"
+#include "UI/Core/UI_RoleOfTheWidget.h"
 #include "UI_PlayerSkillSystem.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class STONEDEFENCE_API UUI_PlayerSkillSystem : public UUI_RoleOfTherWidget
+class STONEDEFENCE_API UUI_PlayerSkillSystem : public UUI_RoleOfTheWidget
 {
 	GENERATED_BODY()
 	

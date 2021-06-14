@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "UI_RoleOfTherWidget.generated.h"
+#include "UI_RoleOfTheWidget.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class STONEDEFENCE_API UUI_RoleOfTherWidget : public UUserWidget
+class STONEDEFENCE_API UUI_RoleOfTheWidget : public UUserWidget
 {
 	GENERATED_BODY()
 	
