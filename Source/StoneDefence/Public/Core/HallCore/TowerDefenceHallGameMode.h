@@ -13,5 +13,6 @@ UCLASS()
 class STONEDEFENCE_API ATowerDefenceHallGameMode : public AGameMode
 {
 	GENERATED_BODY()
-	
+public:
+	ATowerDefenceHallGameMode();
 };

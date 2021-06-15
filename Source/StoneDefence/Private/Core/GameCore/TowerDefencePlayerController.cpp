@@ -2,6 +2,7 @@
 
 
 #include "Core/GameCore/TowerDefencePlayerController.h"
+#include "Core/GameCore/TowerDefenceGameCamera.h"
 
 ATowerDefencePlayerController::ATowerDefencePlayerController()
 {
@@ -30,4 +31,34 @@ void ATowerDefencePlayerController::SetInputModeGameAndUI()
 	InputMode.SetLockMouseToViewportBehavior(EMouseLockMode::LockAlways);
 	InputMode.SetHideCursorDuringCapture(false);
 	SetInputMode(InputMode);
+}
+
+void ATowerDefencePlayerController::SetupInputComponent()
+{
+	Super::SetupInputComponent();
+
+	InputComponent->BindAction("MouseWheelUp", IE_Pressed, this, &ATowerDefencePlayerController::MouseWheelUp);
+	InputComponent->BindAction("MouseWheelDown", IE_Pressed, this, &ATowerDefencePlayerController::MouseWheelDown);
+}
+
+
+static float WheelValue = 15.f;
+void ATowerDefencePlayerController::MouseWheelUp()
+{
+	ATowerDefenceGameCamera* ZoomCamera = Cast<ATowerDefenceGameCamera>(GetPawn());
+	if (!ZoomCamera)
+	{
+		return;
+	}
+	ZoomCamera->Zoom(true, WheelValue);
+}
+
+void ATowerDefencePlayerController::MouseWheelDown()
+{
+	ATowerDefenceGameCamera* ZoomCamera = Cast<ATowerDefenceGameCamera>(GetPawn());
+	if (!ZoomCamera)
+	{
+		return;
+	}
+	ZoomCamera->Zoom(false, WheelValue);
 }

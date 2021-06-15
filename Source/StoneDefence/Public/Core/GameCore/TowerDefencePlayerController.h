@@ -24,6 +24,13 @@ public:
 
 	void SetInputModeGameAndUI();
 
+	//允许玩家自己更新自己的绑定响应
+	virtual void SetupInputComponent() override;
+
+	void MouseWheelUp();
+
+	void MouseWheelDown();
+
 protected:
 	FScreenMoveUnits ScreenMoveUnits;
 };
