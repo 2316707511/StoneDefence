@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/GameState.h"
+#include "GameFramework/GameStateBase.h"
 #include "TowerDefenceGameState.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class STONEDEFENCE_API ATowerDefenceGameState : public AGameState
+class STONEDEFENCE_API ATowerDefenceGameState : public AGameStateBase
 {
 	GENERATED_BODY()
 	
