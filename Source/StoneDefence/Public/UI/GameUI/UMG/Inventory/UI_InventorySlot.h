@@ -19,6 +19,7 @@ class STONEDEFENCE_API UUI_InventorySlot : public UUI_RoleOfTheWidget
 public:
 	virtual void NativeConstruct();
 
+	UFUNCTION()
 	void OnClickedWidget();
 private:
 

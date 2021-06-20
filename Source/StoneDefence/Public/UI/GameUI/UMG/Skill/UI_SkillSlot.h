@@ -20,6 +20,7 @@ class STONEDEFENCE_API UUI_SkillSlot : public UUI_RoleOfTheWidget
 public:
 	virtual void NativeConstruct();
 
+	UFUNCTION()
 	void OnClickedWidget();
 
 private:
