@@ -15,6 +15,8 @@ void UUI_HallMenuSystem::NativeConstruct()
 	TutorialWebsiteButton->OnClicked.AddDynamic(this, &UUI_HallMenuSystem::TutorialWebsite);
 	BrowserButton->OnClicked.AddDynamic(this, &UUI_HallMenuSystem::Browser);
 	QuitGameButton->OnClicked.AddDynamic(this, &UUI_HallMenuSystem::QuitGame);
+	SecretTerritoryButton->OnClicked.AddDynamic(this, &UUI_HallMenuSystem::SecretTerritory);
+	SpecialContentButton->OnClicked.AddDynamic(this, &UUI_HallMenuSystem::SpecialContent);
 }
 
 void UUI_HallMenuSystem::GameStart()
@@ -39,6 +41,14 @@ void UUI_HallMenuSystem::Browser()
 }
 
 void UUI_HallMenuSystem::QuitGame()
+{
+}
+
+void UUI_HallMenuSystem::SecretTerritory()
+{
+}
+
+void UUI_HallMenuSystem::SpecialContent()
 {
 }
 

@@ -30,6 +30,10 @@ public:
 	void Browser();
 	UFUNCTION()
 	void QuitGame();
+	UFUNCTION()
+	void SecretTerritory();
+	UFUNCTION()
+	void SpecialContent();
 
 private:
 	UPROPERTY(meta = (BindWidget))
@@ -49,4 +53,10 @@ private:
 
 	UPROPERTY(meta = (BindWidget))
 		UButton* QuitGameButton;
+
+	UPROPERTY(meta = (BindWidget))
+		UButton* SecretTerritoryButton;
+
+	UPROPERTY(meta = (BindWidget))
+		UButton* SpecialContentButton;
 };
