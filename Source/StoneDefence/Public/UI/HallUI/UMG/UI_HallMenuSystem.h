@@ -4,9 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "UI/Core/UI_RoleOfTheWidget.h"
+#include "Components/Button.h"
 #include "UI_HallMenuSystem.generated.h"
 
-class UButton;
 /**
  * 
  */
@@ -18,22 +18,14 @@ class STONEDEFENCE_API UUI_HallMenuSystem : public UUI_RoleOfTheWidget
 public:
 	virtual void NativeConstruct();
 
-	UFUNCTION()
-	void GameStart();
-	UFUNCTION()
-	void History();
-	UFUNCTION()
-	void GameSettings();
-	UFUNCTION()
-	void TutorialWebsite();
-	UFUNCTION()
-	void Browser();
-	UFUNCTION()
-	void QuitGame();
-	UFUNCTION()
-	void SecretTerritory();
-	UFUNCTION()
-	void SpecialContent();
+	void BindGameStart(FOnButtonClickedEvent ClickedEvent);
+	void BindHistory(FOnButtonClickedEvent ClickedEvent);
+	void BindGameSettings(FOnButtonClickedEvent ClickedEvent);
+	void BindTutorialWebsite(FOnButtonClickedEvent ClickedEvent);
+	void BindBrowser(FOnButtonClickedEvent ClickedEvent);
+	void BindQuitGame(FOnButtonClickedEvent ClickedEvent);
+	void BindSecretTerritory(FOnButtonClickedEvent ClickedEvent);
+	void BindSpecialContent(FOnButtonClickedEvent ClickedEvent);
 
 private:
 	UPROPERTY(meta = (BindWidget))
