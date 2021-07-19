@@ -25,6 +25,13 @@ public:
 
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(Blueprintable, BlueprintPure, Category = "Towers|Attribute")
+	bool IsActive() {
+		return !IsDeath();
+	}
+
+
+
 	FORCEINLINE ATowerDefencePlayerController* GetGameController() {
 		return GetWorld() ? GetWorld()->GetFirstPlayerController<ATowerDefencePlayerController>(): nullptr;
 	}
@@ -40,6 +47,7 @@ public:
 	FORCEINLINE UArrowComponent* GetFirePoint() const {
 		return OpenFirePoint;
 	}
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

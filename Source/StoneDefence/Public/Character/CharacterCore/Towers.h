@@ -31,4 +31,8 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "BaseAttribute", meta = (AllowPrivateAccess = true))
 	UParticleSystemComponent* ParticleMesh;
+
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "BaseAttribute")
+	FRotator TowersRotator;
 };
