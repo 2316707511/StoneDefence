@@ -30,8 +30,6 @@ public:
 		return !IsDeath();
 	}
 
-
-
 	FORCEINLINE ATowerDefencePlayerController* GetGameController() {
 		return GetWorld() ? GetWorld()->GetFirstPlayerController<ATowerDefencePlayerController>(): nullptr;
 	}
@@ -61,6 +59,11 @@ protected:
 	virtual float GetMaxHealth() override;
 
 	virtual bool IsTeam() override;
+
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AnimAttribute")
+		bool bAttack;
+
 
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "BaseAttribute", meta = (AllowPrivateAccess = true))
