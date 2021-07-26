@@ -13,5 +13,7 @@ UCLASS()
 class STONEDEFENCE_API AMonstersAIController : public ARuleOfTheAIController
 {
 	GENERATED_BODY()
-	
+
+public:
+	virtual AActor* FindTarget() override;
 };
