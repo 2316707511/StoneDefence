@@ -13,7 +13,7 @@ ATowerDefencePlayerController::ATowerDefencePlayerController()
 void ATowerDefencePlayerController::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	float ScreenMoveSpeed = 20.f;
+	float ScreenMoveSpeed = 5.f;
 	ScreenMoveUnits.ListenScreenMove(this, ScreenMoveSpeed);
 }
 

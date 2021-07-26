@@ -22,6 +22,8 @@ ATowerDefenceGameCamera::ATowerDefenceGameCamera()
 
 	CameraBoom->TargetArmLength = 800.f;
 	CameraBoom->SetRelativeRotation(FRotator(-60.f, 0.f, 0.f));
+
+	MarkBox->SetCollisionProfileName(TEXT("ControllerPawnProfile"));
 }
 
 // Called when the game starts or when spawned
