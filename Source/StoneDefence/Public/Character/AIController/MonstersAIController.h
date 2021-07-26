@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "Character/Core/RuleOfTheAIController.h"
-#include "TowersAIController.generated.h"
+#include "MonstersAIController.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class STONEDEFENCE_API ATowersAIController : public ARuleOfTheAIController
+class STONEDEFENCE_API AMonstersAIController : public ARuleOfTheAIController
 {
 	GENERATED_BODY()
 	
