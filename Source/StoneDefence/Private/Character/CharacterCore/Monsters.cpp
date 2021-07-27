@@ -13,3 +13,8 @@ void AMonsters::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
+
+EGameCharacterType::Type AMonsters::GetType()
+{
+	return EGameCharacterType::Type::MONSTER;
+}

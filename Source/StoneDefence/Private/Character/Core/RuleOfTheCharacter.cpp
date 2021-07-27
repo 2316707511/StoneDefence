@@ -60,6 +60,11 @@ bool ARuleOfTheCharacter::IsTeam()
 	return false;
 }
 
+EGameCharacterType::Type ARuleOfTheCharacter::GetType()
+{
+	return EGameCharacterType::Type::MAX;
+}
+
 // Called every frame
 void ARuleOfTheCharacter::Tick(float DeltaTime)
 {

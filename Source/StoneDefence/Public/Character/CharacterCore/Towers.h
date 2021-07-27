@@ -22,6 +22,8 @@ public:
 	
 	ATowers();
 
+	virtual EGameCharacterType::Type GetType() override;
+
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "BaseAttribute", meta = (AllowPrivateAccess = true))
 	UStaticMeshComponent* StaticMeshBuilding;
@@ -31,6 +33,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "BaseAttribute", meta = (AllowPrivateAccess = true))
 	UParticleSystemComponent* ParticleMesh;
+
 
 public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "BaseAttribute")

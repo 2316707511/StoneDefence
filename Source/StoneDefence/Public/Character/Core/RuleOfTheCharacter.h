@@ -7,6 +7,7 @@
 #include "Interface/Character/IRuleCharacter.h"
 #include "Core/GameCore/TowerDefencePlayerController.h"
 #include "Core/GameCore/TowerDefenceGameState.h"
+#include <StoneDefence/StoneDefenceType.h>
 #include "RuleOfTheCharacter.generated.h"
 
 class UBoxComponent;
@@ -59,6 +60,8 @@ protected:
 	virtual float GetMaxHealth() override;
 
 	virtual bool IsTeam() override;
+
+	virtual EGameCharacterType::Type GetType() override;
 
 public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AnimAttribute")

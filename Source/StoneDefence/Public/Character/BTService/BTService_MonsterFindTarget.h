@@ -30,6 +30,8 @@ public:
 	UPROPERTY(EditAnywhere, Category = "BlackBoard")
 	struct FBlackboardKeySelector BlackBoardKey_Distance;
 
+	UPROPERTY(EditAnywhere, Category = "BlackBoard")
+	struct FBlackboardKeySelector BlackBoardKey_TargetLocation;
 private:
 	TWeakObjectPtr<ARuleOfTheCharacter> Target;
 };
